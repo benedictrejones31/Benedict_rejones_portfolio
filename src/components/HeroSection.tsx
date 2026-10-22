@@ -1,6 +1,6 @@
 import React from 'react';
 import { portfolioData } from '../data/portfolio';
-import { Github, Linkedin, Mail, ArrowUpRight, Code2, Download } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUpRight, Code2, Download, Briefcase, GraduationCap } from 'lucide-react';
 import { ScrollReveal } from './ScrollReveal';
 
 export const HeroSection: React.FC = () => {
@@ -14,9 +14,21 @@ export const HeroSection: React.FC = () => {
           {/* Left Column: Hero Narrative */}
           <div className="lg:col-span-7 min-w-0 flex flex-col justify-center">
             <ScrollReveal immediate delay={0}>
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface border border-border text-[11px] sm:text-xs font-medium text-accent tracking-wide mb-6 max-w-full">
-                <span className="w-2 h-2 rounded-full bg-accent animate-pulse flex-shrink-0" />
-                <span className="truncate">Available for AI Engineering & Collaborations</span>
+              <div className="flex flex-wrap items-center gap-2 mb-6">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface border border-border text-xs font-medium text-text-main shadow-subtle">
+                  <GraduationCap className="w-3.5 h-3.5 text-accent" />
+                  <span>Fresher</span>
+                </div>
+
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface border border-border text-xs font-medium text-text-main shadow-subtle">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse flex-shrink-0" />
+                  <span>Open to Work</span>
+                </div>
+
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface border border-border text-xs font-medium text-text-main shadow-subtle">
+                  <Briefcase className="w-3.5 h-3.5 text-accent" />
+                  <span>Open to Freelancing</span>
+                </div>
               </div>
             </ScrollReveal>
 
@@ -125,25 +137,25 @@ export const HeroSection: React.FC = () => {
           {/* Right Column: Profile & At A Glance Card */}
           <div className="lg:col-span-5 min-w-0 flex flex-col gap-6">
             
-            {/* Profile Photo (if enabled) */}
+            {/* Profile Photo (if enabled) - Uncropped full portrait */}
             {meta.profilePhoto?.enabled && (
               <ScrollReveal immediate delay={0.1}>
-                <div className="bg-surface border border-border rounded-card p-3 shadow-subtle">
-                  <div className="relative aspect-[4/3] w-full rounded-xl overflow-hidden bg-surface-alt border border-border/50">
+                <div className="bg-surface border border-border rounded-card p-3 shadow-subtle flex flex-col">
+                  <div className="relative w-full rounded-xl overflow-hidden bg-surface-alt border border-border/50 flex items-center justify-center p-1">
                     <img
                       src={meta.profilePhoto.src}
                       alt={meta.profilePhoto.alt}
-                      className="absolute inset-0 w-full h-full object-cover object-top filter contrast-[1.02]"
+                      className="w-full h-auto max-h-[520px] object-contain rounded-lg filter contrast-[1.02]"
                       loading="eager"
                     />
-                    <div className="absolute bottom-2 left-2 right-2 bg-surface/90 backdrop-blur-sm border border-border/80 px-3 py-1.5 rounded-lg flex items-center justify-between">
-                      <span className="text-xs font-medium text-text-main">
-                        W Benedict Rejones
-                      </span>
-                      <span className="text-[11px] text-accent font-semibold tracking-wide uppercase">
-                        AI Engineer
-                      </span>
-                    </div>
+                  </div>
+                  <div className="mt-2.5 px-3 py-2 bg-surface-alt/70 border border-border/70 rounded-lg flex items-center justify-between">
+                    <span className="text-xs font-medium text-text-main">
+                      {meta.name}
+                    </span>
+                    <span className="text-[11px] text-accent font-semibold tracking-wide uppercase">
+                      {meta.role}
+                    </span>
                   </div>
                 </div>
               </ScrollReveal>

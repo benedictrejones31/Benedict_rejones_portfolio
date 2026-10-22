@@ -113,21 +113,23 @@ export const ContactSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Phone Item */}
-                <div className="flex items-start gap-3">
-                  <div className="w-8 h-8 rounded-lg bg-accent-soft flex items-center justify-center flex-shrink-0 text-accent">
-                    <Phone className="w-4 h-4" />
+                {/* Phone Item (hidden if not provided) */}
+                {social.phone && (
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-accent-soft flex items-center justify-center flex-shrink-0 text-accent">
+                      <Phone className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <div className="text-xs text-text-muted font-medium">Phone</div>
+                      <a
+                        href={`tel:${social.phone}`}
+                        className="text-sm font-medium text-text-main hover:text-accent hover:underline transition-colors"
+                      >
+                        {social.phone}
+                      </a>
+                    </div>
                   </div>
-                  <div>
-                    <div className="text-xs text-text-muted font-medium">Phone</div>
-                    <a
-                      href={`tel:${social.phone}`}
-                      className="text-sm font-medium text-text-main hover:text-accent hover:underline transition-colors"
-                    >
-                      {social.phone}
-                    </a>
-                  </div>
-                </div>
+                )}
 
                 {/* Response SLA Note */}
                 <div className="pt-3 border-t border-border/70 text-xs text-text-muted leading-relaxed">

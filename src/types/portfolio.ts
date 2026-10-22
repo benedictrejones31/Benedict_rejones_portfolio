@@ -49,7 +49,7 @@ export interface RecognitionItem {
 
 export interface SocialLinks {
   email: string;
-  phone: string;
+  phone?: string;
   linkedin: string;
   github: string;
   leetcode: string;
@@ -62,6 +62,7 @@ export interface PortfolioData {
     role: string;
     headline: string;
     heroStatement: string;
+    statusBadges?: string[];
     profilePhoto: {
       enabled: boolean;
       src: string;
@@ -84,7 +85,7 @@ export interface PortfolioData {
   projects: ProjectItem[];
   skills: SkillGroup[];
   education: EducationItem[];
-  certifications: CertificationItem[];
+  certifications?: CertificationItem[];
   recognition: RecognitionItem[];
   contact: {
     heading: string;

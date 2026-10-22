@@ -7,6 +7,11 @@ export const portfolioData: PortfolioData = {
     role: "AI Engineer",
     headline: "AI Engineer: building production-grade vision, LLM, and RAG systems",
     heroStatement: "I design machine-learning systems that move from notebook to deployed product, with measurable accuracy, clean APIs, and interfaces people actually use.",
+    statusBadges: [
+      "Fresher",
+      "Open to Work",
+      "Open to Freelancing",
+    ],
     profilePhoto: {
       enabled: true,
       src: "/images/benedict.jpg",
@@ -19,7 +24,6 @@ export const portfolioData: PortfolioData = {
   },
   social: {
     email: "benedictrejones3101@gmail.com",
-    phone: "+91-9500870696",
     linkedin: "https://www.linkedin.com/in/W-benedict-rejones/",
     github: "https://github.com/benedictrejones31",
     leetcode: "https://leetcode.com/u/benedictrejones/",
@@ -47,7 +51,7 @@ export const portfolioData: PortfolioData = {
     },
   ],
   about: {
-    narrative: "I'm a final-stage B.Tech student in Artificial Intelligence and Data Science (CGPA 8.37) who builds end to end: data pipelines, model training, evaluation, APIs, and front ends. My recent work spans realtime voice AI, multi-modal fraud detection, and fully offline retrieval systems. I care about reliability, security, and clear engineering over novelty for its own sake.",
+    narrative: "B.Tech graduate in Artificial Intelligence and Data Science (2022–2026, CGPA 8.37) who builds end to end: data pipelines, model training, evaluation, APIs, and front ends. My recent work spans realtime voice AI, multi-modal fraud detection, and fully offline retrieval systems. I care about reliability, security, and clear engineering over novelty for its own sake.",
     focusAreas: [
       {
         title: "Generative AI & RAG",
@@ -337,40 +341,15 @@ export const portfolioData: PortfolioData = {
   ],
   education: [
     {
-      degree: "B.Tech, Artificial Intelligence and Data Science",
+      degree: "B.Tech in Artificial Intelligence and Data Science",
       institution: "Karunya Institute of Technology and Sciences",
-      period: "Aug 2022 - Present",
+      period: "2022 – 2026",
       cgpa: "8.37",
       details: [
-        "Specializing in machine learning systems, deep neural networks, and computer vision architectures.",
+        "Completed 4-year degree in Artificial Intelligence and Data Science (2022–2026) with an 8.37 CGPA.",
+        "Specialized in machine learning systems, deep neural networks, and computer vision architectures.",
         "Core coursework: Deep Learning, Natural Language Processing, Distributed Data Pipelines, Cloud Computing.",
       ],
-    },
-  ],
-  certifications: [
-    {
-      name: "Microsoft Azure AI Fundamentals",
-      issuer: "Microsoft",
-    },
-    {
-      name: "Building Predictive Models with Machine Learning and Python",
-      issuer: "Infosys",
-    },
-    {
-      name: "Data Analytics Essentials",
-      issuer: "Cisco",
-    },
-    {
-      name: "PCAP: Programming Essentials in Python",
-      issuer: "Cisco",
-    },
-    {
-      name: "Automation Cloud",
-      issuer: "UiPath",
-    },
-    {
-      name: "Java Programming Fundamentals",
-      issuer: "Infosys",
     },
   ],
   recognition: [
