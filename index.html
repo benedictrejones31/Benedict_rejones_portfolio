@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>W Benedict Rejones | AI Engineer</title>
+    <meta name="title" content="W Benedict Rejones | AI Engineer" />
+    <meta name="description" content="AI Engineer specializing in production-grade vision, LLM, and RAG systems. Move machine-learning systems from notebook to deployed products with measurable accuracy." />
+    <meta name="keywords" content="AI Engineer, Machine Learning, Computer Vision, RAG, LLM, PyTorch, FastAPI, Deep Learning, Generative AI" />
+    <meta name="author" content="W Benedict Rejones" />
+    <meta name="theme-color" content="#5E7C7A" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://benedictrejones.vercel.app/" />
+    <meta property="og:title" content="W Benedict Rejones | AI Engineer" />
+    <meta property="og:description" content="AI Engineer building production-grade vision, LLM, and RAG systems. Measurable accuracy, clean APIs, and reliable engineering." />
+    <meta property="og:image" content="/images/og-preview.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://benedictrejones.vercel.app/" />
+    <meta property="twitter:title" content="W Benedict Rejones | AI Engineer" />
+    <meta property="twitter:description" content="AI Engineer building production-grade vision, LLM, and RAG systems. Measurable accuracy, clean APIs, and reliable engineering." />
+    <meta property="twitter:image" content="/images/og-preview.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts: Inter & Source Serif 4 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "W Benedict Rejones",
+        "jobTitle": "AI Engineer",
+        "description": "AI Engineer building production-grade vision, LLM, and RAG systems.",
+        "url": "https://benedictrejones.vercel.app/",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Karunya Institute of Technology and Sciences"
+        },
+        "sameAs": [
+          "https://github.com/benedictrejones31",
+          "https://www.linkedin.com/in/W-benedict-rejones/",
+          "https://leetcode.com/u/benedictrejones/"
+        ],
+        "knowsAbout": [
+          "Artificial Intelligence",
+          "Machine Learning",
+          "Computer Vision",
+          "Generative AI",
+          "Retrieval-Augmented Generation (RAG)",
+          "Large Language Models (LLMs)",
+          "PyTorch",
+          "FastAPI",
+          "Docker",
+          "MLOps"
+        ]
+      }
+    </script>
+
+    <!-- Theme Initialization Script (Prevent FOUC) -->
+    <script>
+      (function() {
+        try {
+          const params = new URLSearchParams(window.location.search);
+          const urlTheme = params.get('theme');
+          if (urlTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+            return;
+          } else if (urlTheme === 'light') {
+            document.documentElement.classList.remove('dark');
+            return;
+          }
+          const stored = localStorage.getItem('wbr-theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-bg text-text-main font-sans antialiased selection:bg-accent-soft selection:text-text-main transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
